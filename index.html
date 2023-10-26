@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de dados</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Registration Form</h1>
+      <form class="form js-form">
+
+        <div class="datos">
+          <div >
+            <label for="name">Name</label>
+            <input type="text" class="js_inputName" name="name" id="name" />
+          </div>
+          <div>
+            <label for="Lastname">Lastname</label>
+            <input
+              type="text"
+              class="js_inputLastname"
+              name="lastname"
+              id="lastname"/>
+          </div>
+
+        <div class="two-columns">
+            <div class="field">
+              <label for="index">Phone</label>
+              <input type="text" class="js_inputPhone" name="telf" id="telf" />
+            </div>
+
+            <div class="field">
+              <label for="index">Email</label>
+              <input type="text" class="js_inputEmail" name="email" id="emal" />
+            </div>
+        </div>
+
+        <div class="field radiobutton">
+            <label for="name">Man</label>
+            <input type="radio" name="sexo" id="hombre" value="Hombre" />
+            <label for="name">Woman</label>
+            <input type="radio" name="sexo" id="mujer" value="Mujer" />
+        </div>
+
+        <div class="fieldComent">
+          <label for="coment">Coments</label>
+          <textarea id="coment" ></textarea>
+        </div>
+
+        <div class="fields term">
+          <label for="term">Term and Conditions</label>
+          <input type="checkbox" name="term" id="term"/>
+        </div>
+
+        <div class="btn js-btn">
+          <input type="submit" name="send" id="btn" value="Send"/>
+        </div>
+
+        </div>
+
+      </form>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2023 Form JS</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
