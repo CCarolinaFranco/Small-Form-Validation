@@ -9,54 +9,55 @@ body {
   }
   
   .main {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #beabab; /* Dark gray for the main container */
-    width: 60%;
-    height: 70%;
+    width: 90%;
+    height: 95%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    text-align:center;
+    text-align: center;
     color: #f0e8e8;
     border-radius: 5px;
   }
-  .datos{
+  
+  .datos {
+    display: flex;
+    flex-direction: column;
     background-color: #d69b9b; /* Dark gray for the main container */
-    width: 80%;
+    width: 90%;
     border-radius: 8px;
-   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
     padding: 20px;
-    text-align:left;
+    text-align: left;
     color: #f0e8e8;
     border-radius: 5px;
   }
-
-
   
   .input-field {
-    height: 40px; /* Set the desired height for input fields */
+    height: 60px; /* Increased height for input fields */
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #666; /* Gray border */
     border-radius: 8px;
     font-size: 16px;
-    
   }
   
   .btn {
-    height: 40px; /* Set the desired height for the button */
+    text-align: center;
+    padding-top: 20px;
+    height: 40px;
     width: 100%;
     background-color: #98abb8; /* Blue background color for the button */
     color: #fff;
     border: none;
     border-radius: 8px;
     font-size: 16px;
-    cursor: pointer; /* Cursor style on hover */
-    transition: background-color 0.3s; /* Button color transition effect */
-    text-align: center;
-    padding-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
   
   .btn:hover {
@@ -64,14 +65,14 @@ body {
   }
   
   .container {
-    background-color: #2e2b2b; /* Slightly lighter gray for containers within the main form */
+    background-color: #2e2b2b;
     padding: 10px;
     border-radius: 8px;
     margin: 10px 0;
   }
   
   .radiobutton {
-    background-color: #968d8d; /* A bit lighter gray for the radio button container */
+    background-color: #968d8d;
     padding: 10px;
     border-radius: 8px;
     margin: 10px 0;
@@ -79,24 +80,34 @@ body {
   }
   
   .fields.term {
-    background-color: #666; /* A bit lighter gray for the terms and conditions checkbox container */
+    background-color: #666;
     padding: 10px;
     border-radius: 8px;
     margin: 10px 0;
     text-align: center;
   }
-
-  .fieldComent{
-    justify-content: center;
-    
+  
+  .fieldComent {
+    display: flex;
+    flex-direction: column;
     background-color: #867c7c; /* Dark gray for the main container */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    text-align:justify;
+    text-align: justify;
     color: #f0e8e8;
     border-radius: 5px;
   }
 
-  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #2e2b2b; /* Dark gray for the footer */
+    padding: 10px;
+    text-align: center;
+    color: #f0e8e8;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+    height: 5%; /* Make the footer occupy 10% of the viewport height */
+    width: 100%;
+  }
   
